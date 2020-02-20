@@ -24,3 +24,12 @@ document.getElementById('for3').onclick = function() {
 
     document.getElementById('out3').innerHTML = result;
 };
+
+// Формула куба разности
+document.getElementById('for4').onclick = function() {
+    var num7 = document.getElementById('num7').value;
+    var num8 = document.getElementById('num8').value;
+    var result = Math.pow(num7, 3) - (3 * Math.pow(num7, 2) * num8) + (3 * Math.pow(num8, 2) * num7) - Math.pow(num8, 3);
+
+    document.getElementById('out4').innerHTML = result;
+};
